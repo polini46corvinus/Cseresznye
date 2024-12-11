@@ -28,41 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            termekekButton = new Button();
+            ugyfelekButton = new Button();
+            rendelesekButton = new Button();
             panel1 = new Panel();
             SuspendLayout();
             // 
-            // button1
+            // termekekButton
             // 
-            button1.Location = new Point(12, 17);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            termekekButton.Location = new Point(12, 17);
+            termekekButton.Name = "termekekButton";
+            termekekButton.Size = new Size(75, 23);
+            termekekButton.TabIndex = 0;
+            termekekButton.Text = "Termékek";
+            termekekButton.UseVisualStyleBackColor = true;
+            termekekButton.Click += termekekButton_Click;
             // 
-            // button2
+            // ugyfelekButton
             // 
-            button2.Location = new Point(12, 46);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            ugyfelekButton.Location = new Point(12, 46);
+            ugyfelekButton.Name = "ugyfelekButton";
+            ugyfelekButton.Size = new Size(75, 23);
+            ugyfelekButton.TabIndex = 1;
+            ugyfelekButton.Text = "Ügyfelek";
+            ugyfelekButton.UseVisualStyleBackColor = true;
+            ugyfelekButton.Click += ugyfelekButton_Click;
             // 
-            // button3
+            // rendelesekButton
             // 
-            button3.Location = new Point(12, 75);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            rendelesekButton.Location = new Point(12, 75);
+            rendelesekButton.Name = "rendelesekButton";
+            rendelesekButton.Size = new Size(75, 23);
+            rendelesekButton.TabIndex = 2;
+            rendelesekButton.Text = "Rendelések";
+            rendelesekButton.UseVisualStyleBackColor = true;
+            rendelesekButton.Click += rendelesekButton_Click;
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Location = new Point(102, 17);
             panel1.Name = "panel1";
             panel1.Size = new Size(962, 566);
@@ -74,19 +79,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1086, 595);
             Controls.Add(panel1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(rendelesekButton);
+            Controls.Add(ugyfelekButton);
+            Controls.Add(termekekButton);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button termekekButton;
+        private Button ugyfelekButton;
+        private Button rendelesekButton;
         private Panel panel1;
     }
 }
