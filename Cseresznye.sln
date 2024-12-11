@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cseresznye", "Cseresznye\Cseresznye.csproj", "{F2225B48-0805-4551-A393-F6AC7EC13E0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CseresznyeAPI", "CseresznyeAPI\CseresznyeAPI.csproj", "{366A8557-9A9D-4291-B0E1-CD595BAF548B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2225B48-0805-4551-A393-F6AC7EC13E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2225B48-0805-4551-A393-F6AC7EC13E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2225B48-0805-4551-A393-F6AC7EC13E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2225B48-0805-4551-A393-F6AC7EC13E0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{366A8557-9A9D-4291-B0E1-CD595BAF548B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{366A8557-9A9D-4291-B0E1-CD595BAF548B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366A8557-9A9D-4291-B0E1-CD595BAF548B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{366A8557-9A9D-4291-B0E1-CD595BAF548B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5382E36-B1AA-45B1-A02D-83E482B645A0}
+	EndGlobalSection
+EndGlobal
